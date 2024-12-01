@@ -2,7 +2,7 @@
 [![Downloads](https://static.pepy.tech/badge/benchmarkfcns)](https://pepy.tech/project/benchmarkfcns)
 
 # BenchmarkFcns
-Benchmarkfcns is an effort to provide a high-perfomant, public and free implementation of well-known benchmark functions for mathematical optimization algorithms in Python. The Python library is implemented in C++ and utilizes the powerful SIMD vector calucluations to offer very fast and efficient evaluation of the implemented functions on large batches of data.
+Benchmarkfcns is an effort to provide a high-perfomant, public and free implementation of well-known benchmark functions for mathematical optimization algorithms in Python. The Python library is implemented in C++ and utilizes powerful SIMD vector calucluations to offer very fast and efficient evaluation of the implemented functions on large batches of data.
 
 For the documentation of the implemented functions and their features, please visit [https://benchmarkfcns.info](https://benchmarkfcns.info).
 
@@ -55,7 +55,7 @@ matplotlib.rcParams['mathtext.fontset'] = 'cm'
 matplotlib.rcParams['font.family'] = 'STIXGeneral'
 
 # We want to plot the function for x and y in range [-5, 5].
-# This corresponds to a grid of 10,000,000 points.
+# This corresponds to a grid of 100,000,000 points.
 x = np.linspace(-5, 5, 10000)
 y = np.linspace(-5, 5, 10000)
 
@@ -83,7 +83,7 @@ plt.show()
 ```
 
 <p align="center">
-    <img src="image-1.png" alt="drawing" width="700"/>
+    <img src="https://raw.githubusercontent.com/mazhar-ansari-ardeh/BenchmarkFcns/master/image-1.png" alt="drawing" width="700"/>
 </p>
 
 ## MATLAB

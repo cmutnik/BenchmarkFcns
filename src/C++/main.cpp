@@ -179,6 +179,22 @@ PYBIND11_MODULE(_core, m) {
         benchmarkfcns.info/doc/brownfcn
     )pbdoc");
 
+    m.def("bukinn2", &bukinn2, R"pbdoc(
+        Computes the value of the Bukin N. 2 benchmark function.
+        SCORES = bukinn2(X) computes the value of the Bukin N. 2 function at
+        point X. `bukinn2` accepts a matrix of size M-by-2 and returns a
+        vetor SCORES of size M-by-1 in which each row contains the function value
+        for the corresponding row of X.
+    )pbdoc");
+
+    m.def("bukinn4", &bukinn4, R"pbdoc(
+        Computes the value of the Bukin N. 4 benchmark function.
+        SCORES = bukinn4(X) computes the value of the Bukin N. 4 function at
+        point X. `bukinn4` accepts a matrix of size M-by-2 and returns a
+        vetor SCORES of size M-by-1 in which each row contains the function value
+        for the corresponding row of X.
+    )pbdoc");
+
     m.def("bukinn6", &bukinn6, R"pbdoc(
         Computes the value of the Bukin N. 6 benchmark function.
         SCORES = bukinn6(X) computes the value of the Bukin N. 6 function at
@@ -189,6 +205,40 @@ PYBIND11_MODULE(_core, m) {
         benchmarkfcns.info/doc/bukinn6fcn
     )pbdoc");
 
+    m.def("carromtable", &carromtable, R"pbdoc(
+        Computes the value of the Carromtable benchmark function.
+        SCORES = carromtable(X) computes the value of the Carromtable
+        function at point X. `carromtable` accepts a matrix of size M-by-2 and
+        returns a vetor SCORES of size M-by-1 in which each row contains the
+        function value for the corresponding row of X.
+        For more information, please visit:
+        benchmarkfcns.info/doc/carromtablefcn
+    )pbdoc");
+
+    m.def("chichinadze", &chichinadze, R"pbdoc(
+        Computes the value of the Chichinadze benchmark function.
+        SCORES = chichinadze(X) computes the value of the Chichinadze
+        function at point X. `chichinadze` accepts a matrix of size M-by-2 and
+        returns a vetor SCORES of size M-by-1 in which each row contains the
+        function value for the corresponding row of X.
+    )pbdoc");
+
+    m.def("cigar", &cigar, R"pbdoc(
+        Computes the value of the Cigar benchmark function.
+        SCORES = cigar(X) computes the value of the Cigar function at point X.
+        `cigar` accepts a matrix of size M-by-N and returns a vetor SCORES of
+        size M-by-1 in which each row contains the function value for the
+        corresponding row of X.
+    )pbdoc");
+
+    m.def("cosinemixture", &cosinemixture, R"pbdoc(
+        Computes the value of the Cosine Mixture benchmark function.
+        SCORES = cosinemixture(X) computes the value of the Cosine Mixture
+        function at point X. `cosinemixture` accepts a matrix of size M-by-N and
+        returns a vetor SCORES of size M-by-1 in which each row contains the
+        function value for the corresponding row of X.
+    )pbdoc");
+
     m.def("crossintray", &crossintray, R"pbdoc(
         Computes the value of the Cross-in-tray benchmark function.
         SCORES = crossintray(X) computes the value of the Cross-in-tray
@@ -197,6 +247,38 @@ PYBIND11_MODULE(_core, m) {
         function value for the corresponding row of X.
         For more information, please visit:
         benchmarkfcns.info/doc/crossintrayfcn
+    )pbdoc");
+
+    m.def("crownedcross", &crownedcross, R"pbdoc(
+        Computes the value of the Crowned Cross benchmark function.
+        SCORES = crownedcross(X) computes the value of the Crowned Cross
+        function at point X. `crownedcross` accepts a matrix of size M-by-2 and
+        returns a vetor SCORES of size M-by-1 in which each row contains the
+        function value for the corresponding row of X.
+    )pbdoc");
+
+    m.def("csendes", &csendes, R"pbdoc(
+        Computes the value of the Csendes benchmark function.
+        SCORES = csendes(X) computes the value of the Csendes function at point X.
+        `csendes` accepts a matrix of size M-by-N and returns a vetor SCORES of
+        size M-by-1 in which each row contains the function value for the
+        corresponding row of X.
+    )pbdoc");
+
+    m.def("cubefcn", &cubefcn, R"pbdoc(
+        Computes the value of the Cube benchmark function.
+        SCORES = cube(X) computes the value of the Cube function at point X.
+        `cube` accepts a matrix of size M-by-N and returns a vetor SCORES of
+        size M-by-1 in which each row contains the function value for the
+        corresponding row of X.
+    )pbdoc");
+
+    m.def("debn1", &debn1, R"pbdoc(
+        Computes the value of the Deb N. 1 benchmark function.
+        SCORES = deb1(X) computes the value of the Deb N. 1 function at point X.
+        `deb1` accepts a matrix of size M-by-N and returns a vetor SCORES of
+        size M-by-1 in which each row contains the function value for the
+        corresponding row of X.
     )pbdoc");
 
     m.def("deckkersaarts", &deckkersaarts, R"pbdoc(
@@ -653,6 +735,14 @@ PYBIND11_MODULE(_core, m) {
         function value for the corresponding row of X.
         For more information, please visit:
         benchmarkfcns.info/doc/threehumpcamelfcn
+    )pbdoc");
+
+    m.def("treccani", &treccani, R"pbdoc(
+        Computes the value of the Treccani benchmark function.
+        SCORES = treccani(X) computes the value of the Treccani
+        function at point X. `treccani` accepts a matrix of size M-by-2 and
+        returns a vetor SCORES of size M-by-1 in which each row contains the
+        function value for the corresponding row of X.
     )pbdoc");
 
     m.def("trid", &trid, R"pbdoc(
